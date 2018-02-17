@@ -1,5 +1,9 @@
 cmake_minimum_required(VERSION 2.8.12)
 
+# Set X11ft path
+set(X11_Xft_INCLUDE_PATH /usr/include/X11/Xft)
+set(X11_Xft_LIB /usr/lib/x86_64-linux-gnu/libXft.so)
+
 project("libeasygl")
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_CURRENT_SOURCE_DIR}/cmake/modules") #For FindFontconfig
 
